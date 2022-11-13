@@ -40,7 +40,7 @@ def submit():
         if r.status_code == 200:
             global counter
             counter += 1
-            print(Fore.LIGHTGREEN + f"Successfully submitted! ({counter})")
+            print(Fore.GREEN + f"Successfully submitted! ({counter})")
         elif r.status_code == 429:
             print(Fore.YELLOW + f"Rate limited!")
         else:
